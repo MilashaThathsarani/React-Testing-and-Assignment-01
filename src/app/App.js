@@ -3,9 +3,9 @@ import HomePage from '../../src/pages/home/index'
 
 function App() {
   return (
-      <HomePage/>
+      <HomePage name ="GDSE" status= "Busy"/>
 
   );
 }
 
-export default HomePage;
+export default App;

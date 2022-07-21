@@ -1,4 +1,5 @@
 import { Component } from "react"
+import Greeting from "../../components/Home/Greeting";
 
 class HomePage extends Component{
     constructor(props) {
@@ -7,9 +8,7 @@ class HomePage extends Component{
 
     render(){
         return(
-            <div>
-                <h1>Hello from Home Page</h1>
-            </div>
+           <Greeting name="Milasha"/>
         )
     }
 }
