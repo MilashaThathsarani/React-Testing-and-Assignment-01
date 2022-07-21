@@ -1,24 +1,41 @@
 export const styleSheet ={
     container:{
         display:'flex',
+        flexWrap:'wrap',
         flexDirection:'column',
-        backgroundColor:'gray',
         height:'100vh',
-        width:'100vw'
+        width:'100vw',
+        alignItems:'center',
+        justifyContent:'center'
     },
+
+    login_cover:{
+        display:'flex',
+        flexWrap:'wrap',
+        flexDirection:'column',
+        height:'65%',
+        width:'30%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        border:'black solid'
+    },
+
     title_container: {
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
         height: '20%',
         width: '100%',
-        backgroundColor: 'yellow',
     },
     form_container:{
+        display:'flex',
+        flexDirection:'column',
         height: '60%',
         width: '100%',
-        backgroundColor: 'blue',
+        alignItems:'center',
+        justifyContent:'space-around'
     },
     btn_container:{
         height: '20%',
-        width: '100%',
-        backgroundColor: 'green',
     }
 }
