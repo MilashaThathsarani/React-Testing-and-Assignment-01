@@ -37,5 +37,6 @@ export const styleSheet ={
     },
     btn_container:{
         height: '20%',
+        color:'red'
     }
 }
