@@ -28,7 +28,7 @@ class Login extends Component{
         if (formData.user_name=== this.state.userName && formData.password === this.state.pw) {
             console.log("credential matched")
         }else {
-            console.log("credential diddn't matched")
+            console.log("credential didn't  matched")
         }
     }
 
