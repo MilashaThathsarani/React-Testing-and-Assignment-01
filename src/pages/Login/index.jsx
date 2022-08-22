@@ -4,17 +4,23 @@ import {withStyles} from "@mui/styles";
 import Typography from "@mui/material/Typography";
 import TextField from '@mui/material/TextField';
 import GDSEButton from "../../components/common/Button";
+import GDSESnackBar from "../../components/common/SnackBar";
 
 class Login extends Component{
     constructor(props) {
         super(props);
         this.state={
             userName:'admin',
-            pw:'admin',
+            pw:'1234',
             formData:{
                 user_name:'',
                 password:''
-            }
+            },
+            //for SnackBar
+            open: false,
+            message: '',
+            severity:''
+
         }
     }
 
@@ -27,8 +33,18 @@ class Login extends Component{
         let formData = this.state.formData;
         if (formData.user_name=== this.state.userName && formData.password === this.state.pw) {
             console.log("credential matched")
+            this.setState({
+                open:true,
+                message:'User credential matching success',
+                severity:'success'
+            })
         }else {
             console.log("credential didn't  matched")
+            this.setState({
+                open:true,
+                message:'User credential not matching success',
+                severity:'error'
+            })
         }
     }
 
@@ -66,6 +82,17 @@ class Login extends Component{
                                     }}/>
                     </div>
                 </div>
+
+                <GDSESnackBar
+                open={this.state.open}
+                onClose={() =>{
+                    this.setState({open:false})
+                }}
+                message={this.state.message}
+                autoHideDuration={3000}
+                severity={this.state.severity}
+                variant="filled"
+                />
             </div>
         )
     }
