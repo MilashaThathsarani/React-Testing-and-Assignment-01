@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {withStyles} from "@mui/styles";
-import {styleSheet} from "../DashBoard/style";
+import {styleSheet} from "./style";
 import Typography from "@mui/material/Typography";
 import GDSEButton from "../../components/common/Button";
 

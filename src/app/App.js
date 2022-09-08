@@ -1,12 +1,11 @@
 import React from "react";
-import HomePage from '../../src/pages/home/index'
-import Login from "../pages/Login";
-import DashBoard from "../pages/DashBoard";
+import Customer from "../pages/Customer";
 
 function App() {
   return (
       //<HomePage name ="GDSE" status= "Busy"/>
-     <DashBoard/>
+     // <DashBoard/>
+      <Customer/>
   );
 }
 
