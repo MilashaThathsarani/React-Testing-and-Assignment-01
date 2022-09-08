@@ -20,11 +20,21 @@ export const styleSheet={
         border:'black solid'
     },
 
-    title_container: {
+    customer_title_container: {
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
         height: '20%',
         width: '100%',
-    }
+    },
+
+    customer_nav_container:{
+        backgroundColor:'blue',
+        height: '9%',
+        width: '100%',
+        display: 'flex',
+        flexDirection :'row',
+        top:'0px',
+        position:'relative'
+    },
 }

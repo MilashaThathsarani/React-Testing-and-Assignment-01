@@ -14,9 +14,12 @@ class Customer extends Component {
         return(
             <div className={classes.customer_container}>
                 <div className={classes.customer_cover}>
-                    <div className={classes.customer_title_container}>
-                        <Typography variant="h4">Customer</Typography>
+                    <div className={classes.customer_nav_container}>
+                        <div className={classes.customer_title_container}>
+                            <Typography variant="h4">Customer</Typography>
+                        </div>
                     </div>
+
                 </div>
             </div>
         )
