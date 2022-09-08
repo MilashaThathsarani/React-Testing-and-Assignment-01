@@ -1,17 +1,30 @@
 export const styleSheet={
     customer_container:{
         display:'flex',
+        flexWrap:'wrap',
         flexDirection:'column',
-        width:'1536px',
-        height:'400px'
+        height:'100vh',
+        width:'100vw',
+        alignItems:'center',
+        justifyContent:'center'
     },
 
-    customer_nav_container:{
-        backgroundColor:'black',
-        height: '10%',
+    customer_cover:{
+        display:'flex',
+        flexWrap:'wrap',
+        flexDirection:'column',
+        height:'65%',
+        width:'30%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        border:'black solid'
+    },
+
+    title_container: {
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        height: '20%',
         width: '100%',
-        display: 'flex',
-        flexDirection :'row'
-    },
-
+    }
 }
