@@ -1,16 +1,15 @@
 import React from "react";
-import Customer from "../pages/Customer";
-import Item from "../pages/Item";
-import Login from "../pages/Login";
+import {Routes,Route} from "react-router-dom"
 import HomePage from "../pages/home";
+import Login from "../pages/session/Login";
 
 function App() {
   return (
-      <HomePage name ="GDSE" status= "Busy"/>
-     // <DashBoard/>
-     //  <Customer/>
-      //<Item/>
-      //<Login/>
+<Routes>
+    <Route exact path='/' element={<HomePage/>}/>
+    <Route path='login' element={<Login/>}/>
+    {/*<Route path="*" element={<NotFound/>}/>*/}
+</Routes>
   );
 }
 

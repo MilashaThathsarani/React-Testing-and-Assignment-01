@@ -2,8 +2,8 @@ import React,{Component} from "react";
 import PropTypes from "prop-types";
 import Button from '@mui/material/Button';
 
-class GDSEButton extends Component{
-    static propTypes ={
+class GDSEButton extends Component {
+    static propTypes = {
         onClick: PropTypes.func,
         children: PropTypes.node,
         variant: PropTypes.string,
@@ -20,11 +20,11 @@ class GDSEButton extends Component{
     static defaultProps = {
         className: "",
         color: "primary",
-        label:"",
-        size:"medium",
-        variant:"contained",
-        disabled:false,
-        type:"button"
+        label: "",
+        size: 'medium',
+        variant: "contained",
+        disabled: false,
+        type: "button"
     }
 
     handleButtonClick = (event) => {
@@ -39,6 +39,7 @@ class GDSEButton extends Component{
         if(label) return label;
         if(children)  return children;
     }
+
     render() {
         const {
             children,
