@@ -1,12 +1,9 @@
 import { Typography } from '@mui/material';
 import { withStyles } from '@mui/styles';
 import React, { Component } from 'react';
-import { styleSheet } from './style';
+import {styleSheet} from "./style";
 
 class FlexBoxLayout extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         let { classes } = this.props
