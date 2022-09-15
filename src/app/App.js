@@ -3,6 +3,7 @@ import {Routes,Route} from "react-router-dom"
 import FlexBoxLayout from "../pages/Layouts/FlexBox";
 import HomePage from "../pages/home";
 import Login from "../pages/session/Login";
+import GridLayout from "../pages/Layouts/Grid";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Route path='login' element={<Login/>}/>
     {/*<Route path="*" element={<NotFound/>}/>*/}
   <Route path='flex-layout' element={<FlexBoxLayout/>}/>
+  <Route path='grid-layout' element={<GridLayout/>}/>
 </Routes>
   );
 }
